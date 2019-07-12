@@ -1,0 +1,21 @@
+div{
+    text-align: right;
+    border-block-color: red;
+
+}
+
+body{
+    background-color: yellowgreen;
+}
+
+h1{
+    text-decoration-line: underline;
+}
+
+.p1{border:3px; border-style:solid; border-color:black; padding: 1em;background-color: burlywood}
+
+.p2{border:3px; border-style:solid; border-color:black; padding: 1em;background-color: burlywood}
+
+.p3{border:3px; border-style:solid; border-color:black; padding: 1em;background-color: burlywood}
+
+.p4{border:3px; border-style:solid; border-color:black; padding: 1em;background-color: burlywood}

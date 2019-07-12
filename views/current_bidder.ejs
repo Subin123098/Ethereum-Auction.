@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>welcome bidders</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/cb.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+  </head>
+  <body>
+    
+      <div style="margin:30px;">
+            <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+              <a class="navbar-brand" href="/">INDEX |</a>
+
+            <a class="navbar-brand" href="/home">HOME |</a>
+            
+                <a class="navbar-brand" href="/products">CHECK AUCTION STATUS |</a>
+              
+                <a class="navbar-brand" href="/cb">START BIDDING |</a>
+             
+          </div>
+        </nav>
+        <br>
+</div>
+        <h1 style="text-align: center"> START BIDDING</h1>
+  
+<br>
+<br>   
+         
+ <hr>
+ <hr>
+ <br>      
+<p class="p1">
+         
+            <label> SELECT ADDRESS TO BID:<br><br> <select id="bids"> </label>
+
+              
+                 <option value="<%= data1[1]%>"><%= data1[1] %></option>
+                 
+                 <option value="<%= data1[2]%>"><%= data1[2] %></option>
+                 <option value="<%= data1[3]%>"><%= data1[3] %></option>
+                 <option value="<%= data1[4]%>"><%= data1[4] %></option>
+                 <option value="<%= data1[5]%>"><%= data1[5] %></option>
+                 <option value="<%= data1[6]%>"><%= data1[6] %></option>
+                 <option value="<%= data1[7]%>"><%= data1[7] %></option>
+                 <option value="<%= data1[8]%>"><%= data1[8] %></option>
+                 <option value="<%= data1[9]%>"><%= data1[9] %></option>
+</select>
+
+
+<br>
+<br><br>
+
+
+  <label>ENTER VALUE TO BID:<input type="text" id="e" name="e" sixe=10px/></label>
+  </p>
+  <br>
+  <br>
+  <br>
+  
+  <br>
+
+  <input type="submit" id="bidAction" value="Submit the above data to bid" />
+
+  <br>
+  <br>
+
+
+   <hr>
+   <hr>  <hr>               
+           <br>         
+<p class="p2">
+           <label>SELECT ADDRESS TO CHECK BID VALUE:<br><br><select id="address"> </label>
+
+              
+            <option value="<%= data1[1]%>"><%= data1[1] %></option>
+            
+            <option value="<%= data1[2]%>"><%= data1[2] %></option>
+            <option value="<%= data1[3]%>"><%= data1[3] %></option>
+            <option value="<%= data1[4]%>"><%= data1[4] %></option>
+            <option value="<%= data1[5]%>"><%= data1[5] %></option>
+            <option value="<%= data1[6]%>"><%= data1[6] %></option>
+            <option value="<%= data1[7]%>"><%= data1[7] %></option>
+            <option value="<%= data1[8]%>"><%= data1[8] %></option>
+            <option value="<%= data1[9]%>"><%= data1[9] %></option>
+</select>
+</p>
+<br>
+      <br><br>
+      <input type="submit" id="bidValue" value="Bid Value " size="40px" />
+      <br>
+      <br>
+    
+    <hr>
+    <hr>
+
+    <br>
+    <p class="p3">
+    <label>SELECT THE ADDRESS OF LOSERS TO WITHDRAW BIDS:<br><br><select id="AddressList1"></label>
+        
+        <option value="<%= data1[1]%>"><%= data1[1]%></option>
+        <option value="<%= data1[2]%>"><%= data1[2]%></option>
+        <option value="<%= data1[3]%>"><%= data1[3]%></option>
+        <option value="<%= data1[4]%>"><%= data1[4]%></option>
+        <option value="<%= data1[5]%>"><%= data1[5]%></option>
+        <option value="<%= data1[6]%>"><%= data1[6]%></option>
+        <option value="<%= data1[7]%>"><%= data1[7]%></option>
+        <option value="<%= data1[8]%>"><%= data1[8]%></option>
+        <option value="<%= data1[9]%>"><%= data1[9]%></option>
+    </select>
+    </p>
+    <br>
+    <br><br>
+
+      <input type="submit" id="getBidBack" value="Get Your Bids " />
+<br>
+<br>
+<hr>
+<hr>
+<br>
+<br>
+<p class="p4">
+<label>SELECT ADDRESS TO WITHDRAW HIGHEST BID FROM CONTRACT:<br><br><select id="AddressList"></label>
+    <option value="<%= data1[1]%>"><%= data1[1]%></option>
+    <option value="<%= data1[2]%>"><%= data1[2]%></option>
+    <option value="<%= data1[3]%>"><%= data1[3]%></option>
+    <option value="<%= data1[4]%>"><%= data1[4]%></option>
+    <option value="<%= data1[5]%>"><%= data1[5]%></option>
+    <option value="<%= data1[6]%>"><%= data1[6]%></option>
+    <option value="<%= data1[7]%>"><%= data1[7]%></option>
+    <option value="<%= data1[8]%>"><%= data1[8]%></option>
+    <option value="<%= data1[9]%>"><%= data1[9]%></option>
+  </select>
+  </p>
+  <br><br><br>
+  <input type="submit" id="withdrawBid" value="Withdraw Bid" />
+
+
+<!-----------javascript files---------------------------------------------------------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+document.getElementById("bidAction").addEventListener("click", bidAction, false);
+document.getElementById("bidValue").addEventListener("click", bidValue, false);
+document.getElementById("getBidBack").addEventListener("click", getBidBack, false);
+document.getElementById("withdrawBid").addEventListener("click", withdrawBid, false);
+function bidValue() {
+      $.post("/getbid",
+        {
+
+          address: document.getElementById("address").value
+
+
+        },
+        function (tx, status) {
+          console.log("Data: " + tx + "\nStatus: " + status);
+          if (status == "success") {
+            document.getElementById("bidvalue").innerHTML = tx;
+            alert(tx);
+            
+           
+          }
+        });
+    }
+
+
+function bidAction() {
+      $.post("/current_bidder",
+        {
+
+          bids: document.getElementById("bids").value,
+          e: document.getElementById("e").value
+
+        },
+        function (tx, status) {
+          console.log("Data: " + tx + "\nStatus: " + status);
+          if (status == "success") {
+          alert(tx);
+          
+           //redirect('/product.ejs');
+          }
+          
+          location.reload();
+
+        });
+    }
+
+    function getBidBack() {
+      $.post("/bidback",
+        {
+          Address: document.getElementById("AddressList1").value
+
+        },
+        function (tx, status) {
+          console.log("Data: " + tx + "\nStatus: " + status);
+          if (status == "success") {
+            alert(tx);
+          }
+        });
+    }
+
+    function withdrawBid() {
+      $.post("/withdraw",
+        {
+
+          AddressList: document.getElementById("AddressList").value
+
+
+        },
+        function (tx, status) {
+          console.log("Data: " + tx + "\nStatus: " + status);
+          if (status == "success") {
+            alert(tx);
+
+          }
+          location.reload();
+        });
+    }
+
+    function(){
+
+      $.post("/winner",{
+
+        function(tx,status){
+          if(status=="succes"){
+            alert(tx);
+          }
+          location.reload();
+        }
+      });
+    }
+
+</script>
+
+</body>
+</html>
